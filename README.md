@@ -16,12 +16,12 @@ Our AI operates on a meticulously crafted skill system organized into 4 core pil
 ### 🔍 1. Research & Data Synthesis
 Focuses on gathering and making sense of data.
 - **GG-Research (NotebookLM):** Zero-hallucination data synthesis across PDFs, YouTube, and Docs with 9-format Studio Artifact generation (Podcasts, Video, Slides).
-- **Deep Research:** Investigating complex questions against high-trust primary sources.
+- **Deep Research:** Digging deep into trusted original documents to find exact answers without guessing.
 
 ### ⚙️ 2. Engineering & Architecture
 Focuses on writing robust code and designing scalable systems.
-- **Codebase Design (Karpathy-style):** Designing deep modules, clear interfaces, and testable codebases.
-- **TypeScript Wizardry (Matt Pocock-style):** Advanced TS migrations, generic typing, and test scaffolding.
+- **Codebase Design (Karpathy-style):** Designing clear, testable, and highly organized codebases.
+- **TypeScript Wizardry (Matt Pocock-style):** Writing modern, error-free code that catches bugs before they happen.
 
 ### 🛡️ 3. Debugging & Code Review
 Focuses on finding flaws and post-incident analysis.
@@ -30,7 +30,7 @@ Focuses on finding flaws and post-incident analysis.
 
 ### 👔 4. Delegation & Ops
 Focuses on efficiency, teamwork, and leadership communication.
-- **Qwen Delegation (9arm-skills):** Offloading menial, low-risk tasks (boilerplate, bulk renames) to cost-effective sub-agents.
+- **Qwen Delegation (9arm-skills):** Offloading repetitive, manual tasks (like renaming hundreds of files) to cost-effective sub-agents.
 - **Executive Translation (`/management-talk`):** Translating deep engineering jargon into high-impact business updates for VPs/Directors via Slack or JIRA.
 
 ---
@@ -56,26 +56,26 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 # 🚀 คู่มือปฏิบัติงานอัจฉริยะ English Mania (Ball-OTOP)
 
-แหล่งรวมคู่มือการทำงานของทีม ที่ยกระดับด้วย **คลังสมอง AI (AI Skills) กว่า 30 รูปแบบ** เพื่อช่วยลดเวลาการทำงานซ้ำซ้อน และเพิ่มศักยภาพการทำงานระดับพระกาฬให้กับทีม
+แหล่งรวมคู่มือการทำงานของทีม ที่ยกระดับด้วย **คลังสมอง AI (AI Skills) กว่า 30 รูปแบบ** เพื่อช่วยลดเวลาการทำงานซ้ำซ้อน และเพิ่มศักยภาพการทำงานให้กับทีมอย่างก้าวกระโดด
 
 ## 🔥 ไฮไลท์สุดยอด AI Skills ทั้ง 4 หมวดหมู่
 
 เราได้รวบรวมและจัดหมวดหมู่ AI Skills ระดับท็อปของวงการมาไว้ที่นี่ที่เดียว:
 
 ### 🔍 1. การวิจัยและสังเคราะห์ข้อมูล (Research & Data Synthesis)
-- **GG-Research (NotebookLM):** ดึงข้อมูลข้ามแพลตฟอร์ม (เอกสาร, YouTube) มาวิเคราะห์หาจุดเชื่อมโยง ได้คำตอบอ้างอิงจากข้อมูลจริง 100% (Zero Hallucination) พร้อมสั่งสร้างสื่อ 9 รูปแบบ เช่น สไลด์พรีเซนต์ และพอดแคสต์
-- **Deep Research:** การสืบค้นข้อมูลเชิงลึกจากแหล่งข้อมูลปฐมภูมิที่เชื่อถือได้
+- **GG-Research (NotebookLM):** ดึงข้อมูลข้ามแพลตฟอร์ม (เอกสาร, YouTube) มาวิเคราะห์หาจุดเชื่อมโยง ได้คำตอบอ้างอิงจากข้อมูลจริง 100% ไม่มีมโน พร้อมสั่งสร้างสื่อ 9 รูปแบบ เช่น สไลด์พรีเซนต์ และพอดแคสต์
+- **Deep Research:** การสืบค้นข้อมูลเชิงลึกจากเอกสารต้นฉบับจริงที่เชื่อถือได้ เพื่อหาคำตอบที่ถูกต้องที่สุด
 
-### ⚙️ 2. สถาปัตยกรรมระบบและการเขียนโค้ด (Engineering & Architecture)
-- **กระบวนทัศน์ระดับโลก (Karpathy & Pocock):** กระบวนการคิดและออกแบบโครงสร้างโค้ดสไตล์ Andrej Karpathy และเวทมนตร์การเขียน TypeScript ขั้นสุดยอดสไตล์ Matt Pocock
+### ⚙️ 2. การออกแบบระบบและการเขียนโค้ด (Engineering & Architecture)
+- **วิธีคิดระดับโลก (Karpathy & Pocock):** กระบวนการคิดและวางโครงสร้างโค้ดให้เป็นระเบียบสไตล์ Andrej Karpathy และเทคนิคการเขียนโค้ดที่ลดโอกาสเกิดบั๊กให้น้อยที่สุดสไตล์ Matt Pocock
 
-### 🛡️ 3. การแก้บั๊กและตรวจสอบคุณภาพ (Debugging & Code Review)
-- **คาถาแก้บั๊ก (Debug Mantra):** กฎเหล็ก 4 ข้อในการแก้ปัญหาโค้ด (Reproduce, Trace, Falsify, Cross-reference) สไตล์นายอาร์ม (9arm) ที่ฝังอยู่ในระบบประสาทส่วนกลางของ AI
-- **ตรวจสอบโค้ดสุดโหด (`/scrutinize`):** รีวิวโค้ดและ PR แบบคนนอกที่ไม่เกรงใจใคร เพื่อหาช่องโหว่
+### 🛡️ 3. การแก้ปัญหาและตรวจสอบคุณภาพ (Debugging & Code Review)
+- **คาถาแก้บั๊ก (Debug Mantra):** กฎเหล็ก 4 ข้อในการหาต้นตอของปัญหาโค้ด สไตล์นายอาร์ม (9arm) ที่ฝังอยู่ในระบบคิดของ AI
+- **ตรวจสอบโค้ดสุดโหด (`/scrutinize`):** รีวิวงานและโค้ดแบบคนนอกที่ไม่เกรงใจใคร เพื่อหาจุดอ่อนก่อนนำไปใช้งานจริง
 
-### 👔 4. การกระจายงานและการสื่อสาร (Delegation & Ops)
-- **ระบบสั่งการลูกสมุน (9arm-skills):** เตะงานน่าเบื่อ (แก้ชื่อไฟล์, เขียน Boilerplate) ไปให้ AI ระดับรองทำงานแทนด้วยราคาแสนถูก เพื่อเก็บสมอง AI ตัวท็อปไว้ใช้กับตรรกะซับซ้อน
-- **วุ้นแปลภาษาผู้บริหาร (`/management-talk`):** เปลี่ยนภาษาโค้ดดิบๆ ให้กลายเป็นรายงานสถานะแบบมืออาชีพ (Executive Summary) ที่ผู้บริหารอ่านเข้าใจง่าย ตัดน้ำเน้นเนื้อ
+### 👔 4. การจัดการและสื่อสาร (Delegation & Ops)
+- **ระบบสั่งการลูกสมุน (9arm-skills):** โยนงานน่าเบื่อซ้ำซาก (เช่น แก้ชื่อไฟล์ทีละร้อยไฟล์) ไปให้ AI ระดับรองทำงานแทนด้วยราคาถูกแสนถูก เพื่อประหยัดสมอง AI ตัวท็อปไว้ใช้กับงานที่ต้องคิดวิเคราะห์
+- **วุ้นแปลภาษาผู้บริหาร (`/management-talk`):** เปลี่ยนภาษาโค้ดที่ซับซ้อน ให้กลายเป็นรายงานสรุป (Executive Summary) ที่ผู้บริหารอ่านแล้วเข้าใจได้ทันทีว่าเกิดอะไรขึ้น และมีผลกระทบอย่างไร
 
 ---
 
@@ -89,5 +89,5 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 ---
 
 ## 👨‍💻 เครดิตและการดูแลระบบ
-- **ผู้พัฒนาและดูแลระบบ:** Ball (English Mania Engineering)
-- **สถาปัตยกรรม:** ทำงานแบบ Serverless ผ่าน Cloudflare Workers รวดเร็วและไม่มีวันล่ม อัปเดตเพียงแค่แก้ไฟล์ `manual.html` รันสคริปต์ `update_worker.py` และ Deploy ด้วย `npx wrangler deploy`
+- **ผู้ดูแลระบบ:** Ball (English Mania Engineering)
+- **การทำงานเบื้องหลัง:** ทำงานรวดเร็วและไม่ล่มผ่าน Cloudflare Workers วิธีอัปเดตเพียงแค่แก้ไฟล์ `manual.html` รันสคริปต์ `update_worker.py` และอัปโหลดด้วยคำสั่ง `npx wrangler deploy`
