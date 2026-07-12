@@ -11,20 +11,27 @@ A premium, edge-deployed Operations Manual equipped with an arsenal of **over 30
 
 ## 🔥 The 30+ God-Tier AI Skills
 
-Our AI operates on a meticulously crafted skill system combining the world's best open-source methodologies. Highlights include:
+Our AI operates on a meticulously crafted skill system organized into 4 core pillars:
 
-### 🧠 1. Strategic Data Synthesis (GG-Research)
-Instantly cross-reference massive datasets to find actionable insights. Powered by Google's NotebookLM, this engine guarantees zero-hallucination answers.
-- **9-Format Studio:** Generate Slide Decks, Podcasts (2 AI hosts), Infographics, Mind Maps, and more, customized to your exact style (e.g., Bento-grid).
+### 🔍 1. Research & Data Synthesis
+Focuses on gathering and making sense of data.
+- **GG-Research (NotebookLM):** Zero-hallucination data synthesis across PDFs, YouTube, and Docs with 9-format Studio Artifact generation (Podcasts, Video, Slides).
+- **Deep Research:** Investigating complex questions against high-trust primary sources.
 
-### ⚡ 2. The 9arm Delegation Engine
-Delegate menial, well-scoped coding tasks to cheap sub-agents. Save primary tokens for architectural decisions while the sub-agents handle bulk renames, boilerplate, and log summarization.
+### ⚙️ 2. Engineering & Architecture
+Focuses on writing robust code and designing scalable systems.
+- **Codebase Design (Karpathy-style):** Designing deep modules, clear interfaces, and testable codebases.
+- **TypeScript Wizardry (Matt Pocock-style):** Advanced TS migrations, generic typing, and test scaffolding.
 
-### 🧠 3. Karpathy & Pocock Methodologies
-Deep, structured problem-solving skills inspired by Andrej Karpathy (Debug Mantra, Codebase Design) and Matt Pocock (TypeScript Wizardry). The AI is trained to think deeply, trace fail paths systematically, and write rock-solid code.
+### 🛡️ 3. Debugging & Code Review
+Focuses on finding flaws and post-incident analysis.
+- **Debug Mantra (9arm-style):** A strict 4-step debugging discipline (reproduce, trace, falsify, cross-reference) from the renowned 9arm.
+- **Brutal Code Review (`/scrutinize`):** Outsider-perspective reviews for PRs and design docs to challenge intent and implementation.
 
-### 👔 4. Automated Executive Translation (/management-talk)
-Seamlessly translate deep engineering jargon into high-impact business updates for VPs and Directors, perfectly formatted for Jira, Slack, or email.
+### 👔 4. Delegation & Ops
+Focuses on efficiency, teamwork, and leadership communication.
+- **Qwen Delegation (9arm-skills):** Offloading menial, low-risk tasks (boilerplate, bulk renames) to cost-effective sub-agents.
+- **Executive Translation (`/management-talk`):** Translating deep engineering jargon into high-impact business updates for VPs/Directors via Slack or JIRA.
 
 ---
 
@@ -51,22 +58,24 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 แหล่งรวมคู่มือการทำงานของทีม ที่ยกระดับด้วย **คลังสมอง AI (AI Skills) กว่า 30 รูปแบบ** เพื่อช่วยลดเวลาการทำงานซ้ำซ้อน และเพิ่มศักยภาพการทำงานระดับพระกาฬให้กับทีม
 
-## 🔥 ไฮไลท์สุดยอด AI Skills กว่า 30 แบบ
+## 🔥 ไฮไลท์สุดยอด AI Skills ทั้ง 4 หมวดหมู่
 
-เราได้รวบรวมและปรับแต่ง AI Skills ระดับท็อปของวงการมาไว้ที่นี่ที่เดียว ครอบคลุมตั้งแต่การวิจัย ไปจนถึงการเขียนโค้ด:
+เราได้รวบรวมและจัดหมวดหมู่ AI Skills ระดับท็อปของวงการมาไว้ที่นี่ที่เดียว:
 
-### 🧠 1. สังเคราะห์ข้อมูลเชิงกลยุทธ์ (GG-Research)
-ดึงข้อมูลข้ามแพลตฟอร์ม (เอกสาร, YouTube) มาวิเคราะห์หาจุดเชื่อมโยง ได้คำตอบที่อ้างอิงจากข้อมูลจริง 100% ไม่มีมโน (Zero Hallucination)
-- **Studio Artifacts:** สั่งแปลงข้อมูลเป็นสื่อ 9 รูปแบบ เช่น สไลด์พรีเซนต์, พอดแคสต์ (Audio Overview), หรือ Infographic สไตล์เรียบหรู
+### 🔍 1. การวิจัยและสังเคราะห์ข้อมูล (Research & Data Synthesis)
+- **GG-Research (NotebookLM):** ดึงข้อมูลข้ามแพลตฟอร์ม (เอกสาร, YouTube) มาวิเคราะห์หาจุดเชื่อมโยง ได้คำตอบอ้างอิงจากข้อมูลจริง 100% (Zero Hallucination) พร้อมสั่งสร้างสื่อ 9 รูปแบบ เช่น สไลด์พรีเซนต์ และพอดแคสต์
+- **Deep Research:** การสืบค้นข้อมูลเชิงลึกจากแหล่งข้อมูลปฐมภูมิที่เชื่อถือได้
 
-### ⚡ 2. ระบบสั่งการลูกสมุน (9arm-skills)
-เตะงานน่าเบื่อ (เช่น แก้ชื่อไฟล์ทีละร้อยไฟล์, เขียน Boilerplate) ไปให้ AI ระดับรอง (เช่น Qwen) ทำงานแทนด้วยราคาแสนถูก เพื่อเก็บสมอง AI ตัวท็อปไว้ใช้กับงานระดับสถาปัตยกรรม (Architecture) และตรรกะซับซ้อน
+### ⚙️ 2. สถาปัตยกรรมระบบและการเขียนโค้ด (Engineering & Architecture)
+- **กระบวนทัศน์ระดับโลก (Karpathy & Pocock):** กระบวนการคิดและออกแบบโครงสร้างโค้ดสไตล์ Andrej Karpathy และเวทมนตร์การเขียน TypeScript ขั้นสุดยอดสไตล์ Matt Pocock
 
-### 🧠 3. กระบวนทัศน์ขั้นเทพ (Karpathy & Pocock)
-กระบวนการคิดและแก้ปัญหาโค้ดแบบเจาะลึก (Debug Mantra, Codebase Design) สไตล์ Andrej Karpathy และการเขียน TypeScript ขั้นสุดยอดสไตล์ Matt Pocock ที่ฝังอยู่ในระบบประสาทส่วนกลางของ AI
+### 🛡️ 3. การแก้บั๊กและตรวจสอบคุณภาพ (Debugging & Code Review)
+- **คาถาแก้บั๊ก (Debug Mantra):** กฎเหล็ก 4 ข้อในการแก้ปัญหาโค้ด (Reproduce, Trace, Falsify, Cross-reference) สไตล์นายอาร์ม (9arm) ที่ฝังอยู่ในระบบประสาทส่วนกลางของ AI
+- **ตรวจสอบโค้ดสุดโหด (`/scrutinize`):** รีวิวโค้ดและ PR แบบคนนอกที่ไม่เกรงใจใคร เพื่อหาช่องโหว่
 
-### 👔 4. วุ้นแปลภาษาสำหรับผู้บริหาร (/management-talk)
-เปลี่ยนภาษาโค้ดดิบๆ หรือ Log แจ้งเตือนพังๆ ให้กลายเป็นรายงานสถานะแบบมืออาชีพ (Executive Summary) ที่ผู้บริหารอ่านเข้าใจง่าย ตัดน้ำเน้นเนื้อ
+### 👔 4. การกระจายงานและการสื่อสาร (Delegation & Ops)
+- **ระบบสั่งการลูกสมุน (9arm-skills):** เตะงานน่าเบื่อ (แก้ชื่อไฟล์, เขียน Boilerplate) ไปให้ AI ระดับรองทำงานแทนด้วยราคาแสนถูก เพื่อเก็บสมอง AI ตัวท็อปไว้ใช้กับตรรกะซับซ้อน
+- **วุ้นแปลภาษาผู้บริหาร (`/management-talk`):** เปลี่ยนภาษาโค้ดดิบๆ ให้กลายเป็นรายงานสถานะแบบมืออาชีพ (Executive Summary) ที่ผู้บริหารอ่านเข้าใจง่าย ตัดน้ำเน้นเนื้อ
 
 ---
 
