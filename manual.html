@@ -144,6 +144,11 @@ header p{color:var(--muted);max-width:620px;margin:0 auto 20px}
     <code onclick="navigator.clipboard.writeText(this.innerText)">Copy โฟลเดอร์จาก G:\My Drive\Skill AI\ ไปวางที่ ~/.gemini/config/skills</code>
     <p class="note">เพื่อเปิดใช้งานคำสั่งพิเศษเช่น /management-talk หรือ /research</p>
   </div>
+  <div class="ibox">
+    <h3>5. ระบบวิเคราะห์คลังข้อมูลองค์กร (Google NotebookLM)</h3>
+    <code onclick="navigator.clipboard.writeText(this.innerText)">pip install "notebooklm-py[mcp]"</code>
+    <p class="note">เชื่อมต่อ AI เข้ากับคลังข้อมูลขององค์กร เพื่อให้ออกรายงานและสรุปข้อมูลเชิงลึกได้แม่นยำ 100% โดยไม่อ้างอิงข้อมูลมั่ว (Source-Grounded)</p>
+  </div>
 </div>
 
 <!-- ===== RULES ===== -->
@@ -312,6 +317,19 @@ header p{color:var(--muted);max-width:620px;margin:0 auto 20px}
       <div class="sc-context"><strong>ผลลัพธ์ที่ได้:</strong> หลุดออกจากลูปนรก หรือย้ายแชทใหม่โดยไม่เสียประวัติการทำงานเดิม</div>
       <div class="sf"><div class="sf-num">1.</div><div class="sf-body">ถ้า AI เริ่มแก้ไฟล์กลับไปกลับมาซ้ำๆ สั่ง <span class="c">/loop-me</span> เพื่อดึงสติ AI ให้วิเคราะห์ปัญหาใหม่จากมุมมองอื่น</div></div>
       <div class="sf"><div class="sf-num">2.</div><div class="sf-body">ถ้าแชทยาวเกินไปจน AI เริ่มลืม ให้สั่ง <span class="c">/claude-handoff</span> AI จะสรุปงานทั้งหมดเป็นเอกสารส่งมอบ เพื่อให้คุณเปิดแชทใหม่ (หรือส่งให้ทีมงาน) แล้วสานต่อได้ทันที</div></div>
+    </div>
+  </div>
+
+  <div class="sc">
+    <div class="sc-head">
+      <div class="sc-num" style="color:#58a6ff;border-color:#58a6ff">11</div>
+      <div class="sc-title">📊 ผู้บริหารต้องการบรีฟสรุปด่วนจากเอกสารหรือคลิปประชุมยาว</div>
+      <div class="sc-tog">▾</div>
+    </div>
+    <div class="sc-body">
+      <div class="sc-context"><strong>ผลลัพธ์ที่ได้:</strong> ประหยัดเวลาอ่านเอกสาร ได้ข้อมูลสรุปที่อ้างอิงแหล่งที่มาตรวจสอบได้ หรือแปลงเป็น Podcast ฟังสบายๆ ระหว่างเดินทาง</div>
+      <div class="sf"><div class="sf-num">1.</div><div class="sf-body">สั่ง <span class="c">GG-Research</span> พร้อมแนบลิงก์เอกสาร หรือคลิปวิดีโอ YouTube</div></div>
+      <div class="sf"><div class="sf-num">2.</div><div class="sf-body">AI จะดึงข้อมูลและจัดการสร้าง <strong>Executive Summary</strong>, <strong>FAQ</strong>, หรือ <strong>Audio Overview (Podcast)</strong> ให้ทันที พร้อมแนบอ้างอิงให้ผู้บริหารตรวจสอบได้</div></div>
     </div>
   </div>
 
@@ -649,6 +667,16 @@ header p{color:var(--muted);max-width:620px;margin:0 auto 20px}
 </div>
 <div class="sub">Delegation & Ops</div>
 <div class="grid">
+  <div class="card">
+    <div class="ct"><span class="cmd">GG-Research</span></div>
+    <div class="desc">
+      <strong>หน้าที่:</strong> วิเคราะห์เอกสารข้ามแพลตฟอร์มเพื่อดึงอินไซต์ที่ถูกต้อง โดยไม่อ้างอิงข้อมูลมั่ว<br>
+      <div style="margin-top:6px;padding:8px;background:var(--bg3);border-radius:6px;border-left:2px solid var(--a9);">
+        <span style="font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:2px">💡 ตัวอย่างการใช้งาน</span>
+        <span style="color:var(--text);font-size:0.82rem">รวบรวม Requirement จากหลายไฟล์ หรือแปลงเอกสารเทคนิคเป็นไฟล์เสียง Podcast ให้ทีม Business ฟัง</span>
+      </div>
+    </div>
+  </div>
   <div class="card">
     <div class="ct"><span class="cmd">/management-talk</span></div>
     <div class="desc">
