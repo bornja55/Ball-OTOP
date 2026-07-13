@@ -2,12 +2,10 @@
 
 # 🚀 English Mania Ops & AI Tooling (Ball-OTOP)
 
-![Cloudflare Workers](https://img.shields.io/badge/Deployed_on-Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflare)
 ![NotebookLM](https://img.shields.io/badge/Powered_by-Google_NotebookLM-4285F4?style=for-the-badge&logo=google)
 ![Skills](https://img.shields.io/badge/Skills-30%2B_Premium_AI_Agents-6f42c1?style=for-the-badge&logo=openai)
-![Status](https://img.shields.io/badge/Status-Production_Ready-28A745?style=for-the-badge)
 
-A premium, edge-deployed Operations Manual equipped with an arsenal of **over 30 advanced AI workflow integrations**. This repository centralizes organizational knowledge and provides the team with industry-leading AI capabilities—ranging from zero-hallucination data synthesis to automated code delegation and executive translation.
+A centralized repository for sharing **Skill.md** files and AI-connected tools. This repository is designed for personal reference, team members, and friends to easily access and utilize various AI capabilities and workflows.
 
 ## 🔥 The 30+ God-Tier AI Skills
 
@@ -46,7 +44,6 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 ## 👨‍💻 Maintainer
 - **Owner & Lead Maintainer:** Ball (English Mania Engineering)
-- **Deployment:** Managed via Cloudflare Wrangler. Edits to `manual.html` compile seamlessly into a global edge-worker using `update_worker.py`.
 
 ---
 <a id="thai-version"></a>
@@ -56,7 +53,7 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 # 🚀 คู่มือปฏิบัติงานอัจฉริยะ English Mania (Ball-OTOP)
 
-แหล่งรวมคู่มือการทำงานของทีม ที่ยกระดับด้วย **คลังสมอง AI (AI Skills) กว่า 30 รูปแบบ** เพื่อช่วยลดเวลาการทำงานซ้ำซ้อน และเพิ่มศักยภาพการทำงานให้กับทีมอย่างก้าวกระโดด
+พื้นที่สำหรับแชร์ไฟล์ **Skill.md** และเครื่องมือต่างๆ ที่เชื่อมต่อกับ AI จัดทำขึ้นเพื่อใช้อ่านเอง แบ่งปันให้กับลูกน้องในทีม หรือเพื่อนๆ ที่มาขอคำแนะนำในการนำ AI ไปประยุกต์ใช้ในการทำงาน
 
 ## 🔥 ไฮไลท์สุดยอด AI Skills ทั้ง 4 หมวดหมู่
 
@@ -90,4 +87,3 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 ## 👨‍💻 เครดิตและการดูแลระบบ
 - **ผู้ดูแลระบบ:** Ball (English Mania Engineering)
-- **การทำงานเบื้องหลัง:** ทำงานรวดเร็วและไม่ล่มผ่าน Cloudflare Workers วิธีอัปเดตเพียงแค่แก้ไฟล์ `manual.html` รันสคริปต์ `update_worker.py` และอัปโหลดด้วยคำสั่ง `npx wrangler deploy`
