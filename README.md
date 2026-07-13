@@ -1,6 +1,6 @@
 *Read in other languages: [🇹🇭 ภาษาไทย](#thai-version)*
 
-# 🚀 English Mania Ops & AI Tooling (Ball-OTOP)
+# 🚀 Ball-OTOP AI Tooling
 
 ![NotebookLM](https://img.shields.io/badge/Powered_by-Google_NotebookLM-4285F4?style=for-the-badge&logo=google)
 ![Skills](https://img.shields.io/badge/Skills-30%2B_Premium_AI_Agents-6f42c1?style=for-the-badge&logo=openai)
@@ -43,7 +43,7 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 ---
 
 ## 👨‍💻 Maintainer
-- **Owner & Lead Maintainer:** Ball (English Mania Engineering)
+- **Owner & Lead Maintainer:** Ball
 
 ---
 <a id="thai-version"></a>
@@ -51,7 +51,7 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 # 🇹🇭 ภาษาไทย (Thai Version)
 
-# 🚀 คู่มือปฏิบัติงานอัจฉริยะ English Mania (Ball-OTOP)
+# 🚀 คู่มือและเครื่องมือ AI (Ball-OTOP)
 
 พื้นที่สำหรับแชร์ไฟล์ **Skill.md** และเครื่องมือต่างๆ ที่เชื่อมต่อกับ AI จัดทำขึ้นเพื่อใช้อ่านเอง แบ่งปันให้กับลูกน้องในทีม หรือเพื่อนๆ ที่มาขอคำแนะนำในการนำ AI ไปประยุกต์ใช้ในการทำงาน
 
@@ -86,4 +86,4 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 ---
 
 ## 👨‍💻 เครดิตและการดูแลระบบ
-- **ผู้ดูแลระบบ:** Ball (English Mania Engineering)
+- **ผู้ดูแลระบบ:** Ball
