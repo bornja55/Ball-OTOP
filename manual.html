@@ -149,6 +149,11 @@ header p{color:var(--muted);max-width:620px;margin:0 auto 20px}
     <code onclick="navigator.clipboard.writeText(this.innerText)">pip install "notebooklm-py[mcp]"</code>
     <p class="note">เชื่อมต่อ AI เข้ากับคลังข้อมูลขององค์กร เพื่อให้ออกรายงานและสรุปข้อมูลเชิงลึกได้แม่นยำ 100% โดยไม่อ้างอิงข้อมูลมั่ว (Source-Grounded)</p>
   </div>
+  <div class="ibox">
+    <h3>6. ระบบวาดแผนภาพ (Draw.io MCP)</h3>
+    <code onclick="navigator.clipboard.writeText(this.innerText)">npx -y drawio-mcp-server --editor</code>
+    <p class="note"><strong>การตั้งค่า CI บริษัท:</strong> เปิดเว็บ &gt; ไอคอนเฟือง ⚙️ (มุมขวาบน) &gt; Configuration &gt; วาง JSON โค้ดของบริษัท</p>
+  </div>
 </div>
 
 <!-- ===== RULES ===== -->
@@ -513,6 +518,16 @@ header p{color:var(--muted);max-width:620px;margin:0 auto 20px}
       <div style="margin-top:6px;padding:8px;background:var(--bg3);border-radius:6px;border-left:2px solid var(--a9);">
         <span style="font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:2px">💡 ตัวอย่างการใช้งาน</span>
         <span style="color:var(--text);font-size:0.82rem">ทีมการตลาดเรียกว่า 'ผู้ใช้' ส่วนทีมไอทีเรียกว่า 'Account' คำสั่งนี้จะบังคับให้เราตกลงใช้คำเดียวกันทั้งบริษัท</span>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ct"><span class="cmd">/draw.io</span></div>
+    <div class="desc">
+      <strong>หน้าที่:</strong> สั่ง AI วาด Flowchart หรือ Diagram ลงบน draw.io พร้อมสาดสี CI องค์กรเป็นค่าเริ่มต้น<br>
+      <div style="margin-top:6px;padding:8px;background:var(--bg3);border-radius:6px;border-left:2px solid var(--a9);">
+        <span style="font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:2px">💡 ตัวอย่างการใช้งาน</span>
+        <span style="color:var(--text);font-size:0.82rem">เมื่อต้องการออกแบบระบบ หรือทำ Presentation ให้ผู้บริหารดู โดยคุมโทนสีบริษัทให้อัตโนมัติ</span>
       </div>
     </div>
   </div>

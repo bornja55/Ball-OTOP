@@ -20,6 +20,7 @@ Focuses on gathering and making sense of data.
 Focuses on writing robust code and designing scalable systems.
 - **Codebase Design (Karpathy-style):** Designing clear, testable, and highly organized codebases.
 - **TypeScript Wizardry (Matt Pocock-style):** Writing modern, error-free code that catches bugs before they happen.
+- **Automated Diagramming (`/draw.io`):** Generate architectural diagrams and flowcharts on draw.io with the company's CI palette automatically applied.
 
 ### 🛡️ 3. Debugging & Code Review
 Focuses on finding flaws and post-incident analysis.
@@ -39,6 +40,7 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 - 🧠 [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) by **@multica-ai**
 - 🧙‍♂️ [mattpocock/skills](https://github.com/mattpocock/skills/) by **@mattpocock**
 - 🦾 [9arm-skills](https://github.com/thananon/9arm-skills) by **@thananon**
+- 🎨 [drawio-mcp-server](https://github.com/lgazo/drawio-mcp-server) by **@lgazo**
 
 ---
 
@@ -65,6 +67,7 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 ### ⚙️ 2. การออกแบบระบบและการเขียนโค้ด (Engineering & Architecture)
 - **วิธีคิดระดับโลก (Karpathy & Pocock):** กระบวนการคิดและวางโครงสร้างโค้ดให้เป็นระเบียบสไตล์ Andrej Karpathy และเทคนิคการเขียนโค้ดที่ลดโอกาสเกิดบั๊กให้น้อยที่สุดสไตล์ Matt Pocock
+- **ระบบวาดสถาปัตยกรรม (`/draw.io`):** สั่ง AI วาด Flowchart และแผนภาพระบบลง draw.io พร้อมคุมโทนสี Corporate Identity (CI) ขององค์กรอัตโนมัติ
 
 ### 🛡️ 3. การแก้ปัญหาและตรวจสอบคุณภาพ (Debugging & Code Review)
 - **คาถาแก้บั๊ก (Debug Mantra):** กฎเหล็ก 4 ข้อในการหาต้นตอของปัญหาโค้ด สไตล์นายอาร์ม (9arm) ที่ฝังอยู่ในระบบคิดของ AI
@@ -82,6 +85,7 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 - 🧠 [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) โดย **@multica-ai**
 - 🧙‍♂️ [mattpocock/skills](https://github.com/mattpocock/skills/) โดย **@mattpocock**
 - 🦾 [9arm-skills](https://github.com/thananon/9arm-skills) โดยคุณ **@thananon** (นายอาร์ม)
+- 🎨 [drawio-mcp-server](https://github.com/lgazo/drawio-mcp-server) โดย **@lgazo**
 
 ---
 
