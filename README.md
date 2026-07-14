@@ -9,6 +9,8 @@ A centralized repository for sharing **Skill.md** files and AI-connected tools. 
 
 ## 🔥 The 30+ God-Tier AI Skills
 
+- **`/ask-matt` (Master Router):** Don't know which skill to use? Just ask Matt! He acts as the central router to guide you through all 36+ skills and MCP tools in this repo.
+
 Our AI operates on a meticulously crafted skill system organized into 4 core pillars:
 
 ### 🔍 1. Research & Data Synthesis
@@ -79,6 +81,8 @@ uvx --from "notebooklm-py[cookies]" notebooklm login --browser-cookies chrome
 พื้นที่สำหรับแชร์ไฟล์ **Skill.md** และเครื่องมือต่างๆ ที่เชื่อมต่อกับ AI จัดทำขึ้นเพื่อใช้อ่านเอง แบ่งปันให้กับลูกน้องในทีม หรือเพื่อนๆ ที่มาขอคำแนะนำในการนำ AI ไปประยุกต์ใช้ในการทำงาน
 
 ## 🔥 ไฮไลท์สุดยอด AI Skills ทั้ง 4 หมวดหมู่
+
+- **`/ask-matt` (Master Router):** ไม่รู้จะเริ่มตรงไหน หรือควรใช้คำสั่งไหนดี? ถาม Matt ได้เลย! นี่คือสมองกลที่จะช่วยวิเคราะห์สถานการณ์ และแนะนำวิธีดึงเครื่องมือทั้ง 36+ ตัวในคลังออกมาใช้ได้อย่างแม่นยำที่สุด
 
 เราได้รวบรวมและจัดหมวดหมู่ AI Skills ระดับท็อปของวงการมาไว้ที่นี่ที่เดียว:
 
