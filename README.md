@@ -9,7 +9,19 @@ A centralized repository for sharing **Skill.md** files and AI-connected tools. 
 
 ## 🔥 The 30+ God-Tier AI Skills
 
-- **`/ask-matt` (Master Router):** Don't know which skill to use? Just ask Matt! He acts as the central router to guide you through all 36+ skills and MCP tools in this repo.
+### 🧠 Core Operations (Ops)
+
+**`/ask-matt` (Master Router)**
+- **Status:** Active. The primary entry point for all workflows.
+- **Impact:** Eliminates the need to memorize 36+ skills and MCPs. Engineers can simply state their problem and get routed to the correct automated workflow.
+- **How it works:** Analyzes your raw idea or issue and maps it directly to the exact skill or tool sequence required.
+
+**`/check-context`**
+- **Status:** Active.
+- **Impact:** Prevents the AI from "forgetting" critical details due to overstuffed context windows.
+- **How it works:** Calculates the exact token footprint of the current session so you know precisely when to trigger a context-handoff.
+
+---
 
 Our AI operates on a meticulously crafted skill system organized into 4 core pillars:
 
@@ -82,7 +94,19 @@ uvx --from "notebooklm-py[cookies]" notebooklm login --browser-cookies chrome
 
 ## 🔥 ไฮไลท์สุดยอด AI Skills ทั้ง 4 หมวดหมู่
 
-- **`/ask-matt` (Master Router):** ไม่รู้จะเริ่มตรงไหน หรือควรใช้คำสั่งไหนดี? ถาม Matt ได้เลย! นี่คือสมองกลที่จะช่วยวิเคราะห์สถานการณ์ และแนะนำวิธีดึงเครื่องมือทั้ง 36+ ตัวในคลังออกมาใช้ได้อย่างแม่นยำที่สุด
+### 🧠 เครื่องมือหลัก (Core Ops)
+
+**`/ask-matt` (Master Router)**
+- **สถานะ:** พร้อมใช้งาน (แนะนำให้ใช้เป็นคำสั่งแรกเสมอ)
+- **ผลกระทบ:** ลดภาระที่ทีมต้องมานั่งจำคำสั่งกว่า 36+ ตัว ไม่ว่าจะเริ่มงานใหม่หรือเจอบั๊ก แค่ทักหา Matt ระบบจะประเมินและดึงเครื่องมือที่ถูกต้องมาให้ทันที
+- **หลักการทำงาน:** AI จะวิเคราะห์ปัญหาที่คุณเจอ และจับคู่กับ Skill หรือ MCP ที่เหมาะสมที่สุด เพื่อให้งานเดินต่อได้โดยไม่สะดุด
+
+**`/check-context`**
+- **สถานะ:** พร้อมใช้งาน
+- **ผลกระทบ:** ช่วยป้องกันปัญหาแชทยาวเกินไปจน AI เริ่ม "เบลอ" หรือลืม Context การทำงานก่อนหน้า
+- **หลักการทำงาน:** ตรวจสอบปริมาณ Token (Footprint) ที่ใช้ไปแล้วในบทสนทนานี้ เพื่อให้ผู้ใช้วางแผนเริ่มแชทใหม่และส่งมอบงาน (Handoff) ได้ทันเวลา
+
+---
 
 เราได้รวบรวมและจัดหมวดหมู่ AI Skills ระดับท็อปของวงการมาไว้ที่นี่ที่เดียว:
 
