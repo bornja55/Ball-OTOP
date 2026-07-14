@@ -1,163 +1,76 @@
-*Read in other languages: [🇹🇭 ภาษาไทย](#thai-version)*
+﻿# Ball-OTOP -- Personal AI Skills
 
-# 🚀 Ball-OTOP AI Tooling
-
-![NotebookLM](https://img.shields.io/badge/Powered_by-Google_NotebookLM-4285F4?style=for-the-badge&logo=google)
-![Skills](https://img.shields.io/badge/Skills-30%2B_Premium_AI_Agents-6f42c1?style=for-the-badge&logo=openai)
-
-A centralized repository for sharing **Skill.md** files and AI-connected tools. This repository is designed for personal reference, team members, and friends to easily access and utilize various AI capabilities and workflows.
-
-## 🔥 The 30+ God-Tier AI Skills
-
-### 🧠 Core Operations (Ops)
-
-**`/ask-matt` (Master Router)**
-- **Status:** Active. The primary entry point for all workflows.
-- **Impact:** Eliminates the need to memorize 36+ skills and MCPs. Engineers can simply state their problem and get routed to the correct automated workflow.
-- **How it works:** Analyzes your raw idea or issue and maps it directly to the exact skill or tool sequence required.
-
-**`/check-context`**
-- **Status:** Active.
-- **Impact:** Prevents the AI from "forgetting" critical details due to overstuffed context windows.
-- **How it works:** Calculates the exact token footprint of the current session so you know precisely when to trigger a context-handoff.
+Custom AI Skills I maintain for Claude Code / Cowork.
+Full workflow guide: **[manual.englishmania.co.th](https://manual.englishmania.co.th/)**
 
 ---
 
-Our AI operates on a meticulously crafted skill system organized into 4 core pillars:
+## Installation
 
-### 🔍 1. Research & Data Synthesis
-Focuses on gathering and making sense of data.
-- **GG-Research (NotebookLM):** Zero-hallucination data synthesis across PDFs, YouTube, and Docs with 9-format Studio Artifact generation (Podcasts, Video, Slides).
-- **Deep Research:** Digging deep into trusted original documents to find exact answers without guessing.
-
-### ⚙️ 2. Engineering & Architecture
-Focuses on writing robust code and designing scalable systems.
-- **Codebase Design (Karpathy-style):** Designing clear, testable, and highly organized codebases.
-- **TypeScript Wizardry (Matt Pocock-style):** Writing modern, error-free code that catches bugs before they happen.
-- **Automated Diagramming (`/draw.io`):** Generate architectural diagrams and flowcharts on draw.io with the company's CI palette automatically applied.
-
-### 🛡️ 3. Debugging & Code Review
-Focuses on finding flaws and post-incident analysis.
-- **Debug Mantra (9arm-style):** A strict 4-step debugging discipline (reproduce, trace, falsify, cross-reference) from the renowned 9arm.
-- **Brutal Code Review (`/scrutinize`):** Outsider-perspective reviews for PRs and design docs to challenge intent and implementation.
-
-### 👔 4. Delegation & Ops
-Focuses on efficiency, teamwork, and leadership communication.
-- **Qwen Delegation (9arm-skills):** Offloading repetitive, manual tasks (like renaming hundreds of files) to cost-effective sub-agents.
-- **Executive Translation (`/management-talk`):** Translating deep engineering jargon into high-impact business updates for VPs/Directors via Slack or JIRA.
-
----
-
-## 🤝 Acknowledgments & Credits
-This powerhouse of a repository wouldn't be possible without the incredible open-source tools and skill definitions from the community. Massive thanks to:
-- 📖 [notebooklm-py](https://github.com/danuphon-san/notebooklm-py) & [notebooklm-mcp-cli](https://github.com/danuphon-san/notebooklm-mcp-cli) by **@danuphon-san**
-- 🧠 [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) by **@multica-ai**
-- 🧙‍♂️ [mattpocock/skills](https://github.com/mattpocock/skills/) by **@mattpocock**
-- 🦾 [9arm-skills](https://github.com/thananon/9arm-skills) by **@thananon**
-- 🎨 [drawio-mcp-server](https://github.com/lgazo/drawio-mcp-server) by **@lgazo**
-
----
-
-## 🛠️ Troubleshooting
-
-### NotebookLM: `NotImplementedError` on Windows (`--master-token`)
-
-- **Status:** Known upstream bug in `notebooklm-py` v0.8.0a3.
-- **Impact:** Windows users attempting to use the headless Master Token login will experience a crash (`NotImplementedError`), completely blocking the login flow.
-- **What broke:** The library forces an internal Windows setting (Event Loop Policy) that conflicts with the browser-launching engine (Playwright). The system refuses to launch the interactive login window.
-- **Workaround 1 (Hot-patch):** Run this PowerShell command to automatically fix the bug in your local cache, then re-run the login command using `--python 3.12`:
 ```powershell
-Get-ChildItem -Path "$env:LOCALAPPDATA\uv\cache" -Recurse -Filter "master_token.py" | ForEach-Object { (Get-Content $_.FullName) -replace 'with sync_playwright', "import asyncio; import sys; asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy()) if sys.platform == 'win32' else None`n    with sync_playwright" | Set-Content $_.FullName }
+git clone https://github.com/bornja55/Ball-OTOP.git
+cd Ball-OTOP
+powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
+
+`install.ps1` copies custom skills to `~\.claude\skills\` automatically.
+
+Then install the upstream skill packs:
+
 ```bash
-uvx --python 3.12 --from "notebooklm-py[headless,browser]>=0.8.0a3" notebooklm login --master-token --account YOUR_EMAIL
-```
-- **Workaround 2 (Alternative):** Bypass the master token feature entirely and extract cookies directly from your active Chrome session (no Playwright needed):
-```bash
-uvx --from "notebooklm-py[cookies]" notebooklm login --browser-cookies chrome
-```
+# Karpathy Principles
+/plugin marketplace add forrestchang/andrej-karpathy-skills
 
----
+# 9arm Engineering Skills
+npx skills add thananon/9arm-skills
 
-## 👨‍💻 Maintainer
-- **Owner & Lead Maintainer:** Ball
-
----
-<a id="thai-version"></a>
-<br>
-
-# 🇹🇭 ภาษาไทย (Thai Version)
-
-# 🚀 คู่มือและเครื่องมือ AI (Ball-OTOP)
-
-พื้นที่สำหรับแชร์ไฟล์ **Skill.md** และเครื่องมือต่างๆ ที่เชื่อมต่อกับ AI จัดทำขึ้นเพื่อใช้อ่านเอง แบ่งปันให้กับลูกน้องในทีม หรือเพื่อนๆ ที่มาขอคำแนะนำในการนำ AI ไปประยุกต์ใช้ในการทำงาน
-
-## 🔥 ไฮไลท์สุดยอด AI Skills ทั้ง 4 หมวดหมู่
-
-### 🧠 เครื่องมือหลัก (Core Ops)
-
-**`/ask-matt` (Master Router)**
-- **สถานะ:** พร้อมใช้งาน (แนะนำให้ใช้เป็นคำสั่งแรกเสมอ)
-- **ผลกระทบ:** ลดภาระที่ทีมต้องมานั่งจำคำสั่งกว่า 36+ ตัว ไม่ว่าจะเริ่มงานใหม่หรือเจอบั๊ก แค่ทักหา Matt ระบบจะประเมินและดึงเครื่องมือที่ถูกต้องมาให้ทันที
-- **หลักการทำงาน:** AI จะวิเคราะห์ปัญหาที่คุณเจอ และจับคู่กับ Skill หรือ MCP ที่เหมาะสมที่สุด เพื่อให้งานเดินต่อได้โดยไม่สะดุด
-
-**`/check-context`**
-- **สถานะ:** พร้อมใช้งาน
-- **ผลกระทบ:** ช่วยป้องกันปัญหาแชทยาวเกินไปจน AI เริ่ม "เบลอ" หรือลืม Context การทำงานก่อนหน้า
-- **หลักการทำงาน:** ตรวจสอบปริมาณ Token (Footprint) ที่ใช้ไปแล้วในบทสนทนานี้ เพื่อให้ผู้ใช้วางแผนเริ่มแชทใหม่และส่งมอบงาน (Handoff) ได้ทันเวลา
-
----
-
-เราได้รวบรวมและจัดหมวดหมู่ AI Skills ระดับท็อปของวงการมาไว้ที่นี่ที่เดียว:
-
-### 🔍 1. การวิจัยและสังเคราะห์ข้อมูล (Research & Data Synthesis)
-- **GG-Research (NotebookLM):** ดึงข้อมูลข้ามแพลตฟอร์ม (เอกสาร, YouTube) มาวิเคราะห์หาจุดเชื่อมโยง ได้คำตอบอ้างอิงจากข้อมูลจริง 100% ไม่มีมโน พร้อมสั่งสร้างสื่อ 9 รูปแบบ เช่น สไลด์พรีเซนต์ และพอดแคสต์
-- **Deep Research:** การสืบค้นข้อมูลเชิงลึกจากเอกสารต้นฉบับจริงที่เชื่อถือได้ เพื่อหาคำตอบที่ถูกต้องที่สุด
-
-### ⚙️ 2. การออกแบบระบบและการเขียนโค้ด (Engineering & Architecture)
-- **วิธีคิดระดับโลก (Karpathy & Pocock):** กระบวนการคิดและวางโครงสร้างโค้ดให้เป็นระเบียบสไตล์ Andrej Karpathy และเทคนิคการเขียนโค้ดที่ลดโอกาสเกิดบั๊กให้น้อยที่สุดสไตล์ Matt Pocock
-- **ระบบวาดสถาปัตยกรรม (`/draw.io`):** สั่ง AI วาด Flowchart และแผนภาพระบบลง draw.io พร้อมคุมโทนสี Corporate Identity (CI) ขององค์กรอัตโนมัติ
-
-### 🛡️ 3. การแก้ปัญหาและตรวจสอบคุณภาพ (Debugging & Code Review)
-- **คาถาแก้บั๊ก (Debug Mantra):** กฎเหล็ก 4 ข้อในการหาต้นตอของปัญหาโค้ด สไตล์นายอาร์ม (9arm) ที่ฝังอยู่ในระบบคิดของ AI
-- **ตรวจสอบโค้ดสุดโหด (`/scrutinize`):** รีวิวงานและโค้ดแบบคนนอกที่ไม่เกรงใจใคร เพื่อหาจุดอ่อนก่อนนำไปใช้งานจริง
-
-### 👔 4. การจัดการและสื่อสาร (Delegation & Ops)
-- **ระบบสั่งการลูกสมุน (9arm-skills):** โยนงานน่าเบื่อซ้ำซาก (เช่น แก้ชื่อไฟล์ทีละร้อยไฟล์) ไปให้ AI ระดับรองทำงานแทนด้วยราคาถูกแสนถูก เพื่อประหยัดสมอง AI ตัวท็อปไว้ใช้กับงานที่ต้องคิดวิเคราะห์
-- **วุ้นแปลภาษาผู้บริหาร (`/management-talk`):** เปลี่ยนภาษาโค้ดที่ซับซ้อน ให้กลายเป็นรายงานสรุป (Executive Summary) ที่ผู้บริหารอ่านแล้วเข้าใจได้ทันทีว่าเกิดอะไรขึ้น และมีผลกระทบอย่างไร
-
----
-
-## 🤝 ขอขอบคุณเครดิตต้นฉบับ (Credits)
-คลังสมอง AI สุดเทพเหล่านี้จะเกิดขึ้นไม่ได้เลยหากขาดโปรเจกต์ Open-Source คุณภาพสูงจากนักพัฒนาเหล่านี้ ขอขอบคุณ:
-- 📖 [notebooklm-py](https://github.com/danuphon-san/notebooklm-py) และ [notebooklm-mcp-cli](https://github.com/danuphon-san/notebooklm-mcp-cli) โดยคุณ **@danuphon-san**
-- 🧠 [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) โดย **@multica-ai**
-- 🧙‍♂️ [mattpocock/skills](https://github.com/mattpocock/skills/) โดย **@mattpocock**
-- 🦾 [9arm-skills](https://github.com/thananon/9arm-skills) โดยคุณ **@thananon** (นายอาร์ม)
-- 🎨 [drawio-mcp-server](https://github.com/lgazo/drawio-mcp-server) โดย **@lgazo**
-
----
-
-## 🛠️ การแก้ไขปัญหาเบื้องต้น (Troubleshooting)
-
-### NotebookLM: ขึ้น Error `NotImplementedError` บน Windows
-
-- **สถานะ (Status):** บั๊กจากต้นทาง (Upstream) ใน `notebooklm-py` v0.8.0a3
-- **ผลกระทบ (Impact):** ผู้ใช้ระบบ Windows ที่พยายาม Login แบบ Master Token จะเจอ Error ทันที ทำให้ไม่สามารถยืนยันตัวตนเพื่อใช้งาน NotebookLM ได้
-- **สาเหตุ (What broke):** ตัวไลบรารีมีการบังคับใช้การตั้งค่าระบบพื้นฐานของ Windows (Event Loop Policy) ที่ขัดแย้งกับกลไกการเปิดหน้าเว็บ (Playwright) ระบบของ Windows จึงปฏิเสธคำสั่งเปิดหน้าต่าง Login
-- **วิธีแก้ชั่วคราวที่ 1 (Hot-patch):** เปิด PowerShell แล้วรันคำสั่งด้านล่างเพื่อแก้โค้ดที่มีปัญหาในเครื่องคุณอัตโนมัติ จากนั้นให้ Login ใหม่อีกครั้งโดยบังคับใช้ `--python 3.12`:
-```powershell
-Get-ChildItem -Path "$env:LOCALAPPDATA\uv\cache" -Recurse -Filter "master_token.py" | ForEach-Object { (Get-Content $_.FullName) -replace 'with sync_playwright', "import asyncio; import sys; asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy()) if sys.platform == 'win32' else None`n    with sync_playwright" | Set-Content $_.FullName }
-```
-```bash
-uvx --python 3.12 --from "notebooklm-py[headless,browser]>=0.8.0a3" notebooklm login --master-token --account อีเมลของคุณ
-```
-- **วิธีแก้ชั่วคราวที่ 2 (ทางเลือก):** เลี่ยงไปใช้ระบบดึง Cookie จากเบราว์เซอร์ Chrome ในเครื่องแทน (วิธีนี้ไม่ต้องเปิดหน้าต่าง Playwright ใหม่ จึงไม่รันไปชนกับบั๊กนี้):
-```bash
-uvx --from "notebooklm-py[cookies]" notebooklm login --browser-cookies chrome
+# Matt Pocock Skills (30+ skills)
+npx skills@latest add mattpocock/skills
+# After install: run /setup-matt-pocock-skills once per project
 ```
 
 ---
 
-## 👨‍💻 เครดิตและการดูแลระบบ
-- **ผู้ดูแลระบบ:** Ball
+## Custom Skills (this repo)
+
+Organized by category matching [englishmania manual Toolbox](https://manual.englishmania.co.th/#tools)
+
+### Planning & Alignment (skills/planning/)
+
+| Skill | Description |
+|-------|-------------|
+| /ask-matt | **Master Router** -- describe your situation, get routed to the right skill. Supports MCP: draw.io, StitchMCP, NotebookLM GG-Research |
+
+### Content & Communication (skills/content/)
+
+| Skill | Description |
+|-------|-------------|
+| /englishmania-manual | Full workflow router covering all Project Lifecycle phases (Setup -> Define -> Plan -> Build -> Debug -> Communicate) |
+
+### Handoff & Unblocking (skills/handoff/)
+
+| Skill | Description |
+|-------|-------------|
+| /check-context | Estimate token usage in the current conversation to decide when to Handoff. *(Antigravity only)* |
+
+---
+
+## Credits -- Upstream Skills
+
+Most of the 36+ skills come from these open-source repos. Thank you! <3
+
+| Repo | Author | Install |
+|------|--------|---------|
+| [mattpocock/skills](https://github.com/mattpocock/skills/) | @mattpocock | 
+px skills@latest add mattpocock/skills |
+| [thananon/9arm-skills](https://github.com/thananon/9arm-skills) | @thananon (9arm) | 
+px skills add thananon/9arm-skills |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | @multica-ai | /plugin marketplace add forrestchang/andrej-karpathy-skills |
+| [danuphon-san/notebooklm-mcp-cli](https://github.com/danuphon-san/notebooklm-mcp-cli) | @danuphon-san | 
+px -y notebooklm-mcp-cli |
+| [lgazo/drawio-mcp-server](https://github.com/lgazo/drawio-mcp-server) | @lgazo | 
+px -y drawio-mcp-server |
+
+---
+
+**Maintainer:** Ball
