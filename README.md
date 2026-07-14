@@ -44,6 +44,27 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 
 ---
 
+## 🛠️ Troubleshooting
+
+### NotebookLM: `NotImplementedError` on Windows (`--master-token`)
+
+- **Status:** Known upstream bug in `notebooklm-py` v0.8.0a3.
+- **Impact:** Windows users attempting to use the headless Master Token login will experience a crash (`NotImplementedError`), completely blocking the login flow.
+- **What broke:** The library forces an internal Windows setting (Event Loop Policy) that conflicts with the browser-launching engine (Playwright). The system refuses to launch the interactive login window.
+- **Workaround 1 (Hot-patch):** Run this PowerShell command to automatically fix the bug in your local cache, then re-run the login command using `--python 3.12`:
+```powershell
+Get-ChildItem -Path "$env:LOCALAPPDATA\uv\cache" -Recurse -Filter "master_token.py" | ForEach-Object { (Get-Content $_.FullName) -replace 'with sync_playwright', "import asyncio; import sys; asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy()) if sys.platform == 'win32' else None`n    with sync_playwright" | Set-Content $_.FullName }
+```
+```bash
+uvx --python 3.12 --from "notebooklm-py[headless,browser]>=0.8.0a3" notebooklm login --master-token --account YOUR_EMAIL
+```
+- **Workaround 2 (Alternative):** Bypass the master token feature entirely and extract cookies directly from your active Chrome session (no Playwright needed):
+```bash
+uvx --from "notebooklm-py[cookies]" notebooklm login --browser-cookies chrome
+```
+
+---
+
 ## 👨‍💻 Maintainer
 - **Owner & Lead Maintainer:** Ball
 
@@ -86,6 +107,27 @@ This powerhouse of a repository wouldn't be possible without the incredible open
 - 🧙‍♂️ [mattpocock/skills](https://github.com/mattpocock/skills/) โดย **@mattpocock**
 - 🦾 [9arm-skills](https://github.com/thananon/9arm-skills) โดยคุณ **@thananon** (นายอาร์ม)
 - 🎨 [drawio-mcp-server](https://github.com/lgazo/drawio-mcp-server) โดย **@lgazo**
+
+---
+
+## 🛠️ การแก้ไขปัญหาเบื้องต้น (Troubleshooting)
+
+### NotebookLM: ขึ้น Error `NotImplementedError` บน Windows
+
+- **สถานะ (Status):** บั๊กจากต้นทาง (Upstream) ใน `notebooklm-py` v0.8.0a3
+- **ผลกระทบ (Impact):** ผู้ใช้ระบบ Windows ที่พยายาม Login แบบ Master Token จะเจอ Error ทันที ทำให้ไม่สามารถยืนยันตัวตนเพื่อใช้งาน NotebookLM ได้
+- **สาเหตุ (What broke):** ตัวไลบรารีมีการบังคับใช้การตั้งค่าระบบพื้นฐานของ Windows (Event Loop Policy) ที่ขัดแย้งกับกลไกการเปิดหน้าเว็บ (Playwright) ระบบของ Windows จึงปฏิเสธคำสั่งเปิดหน้าต่าง Login
+- **วิธีแก้ชั่วคราวที่ 1 (Hot-patch):** เปิด PowerShell แล้วรันคำสั่งด้านล่างเพื่อแก้โค้ดที่มีปัญหาในเครื่องคุณอัตโนมัติ จากนั้นให้ Login ใหม่อีกครั้งโดยบังคับใช้ `--python 3.12`:
+```powershell
+Get-ChildItem -Path "$env:LOCALAPPDATA\uv\cache" -Recurse -Filter "master_token.py" | ForEach-Object { (Get-Content $_.FullName) -replace 'with sync_playwright', "import asyncio; import sys; asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy()) if sys.platform == 'win32' else None`n    with sync_playwright" | Set-Content $_.FullName }
+```
+```bash
+uvx --python 3.12 --from "notebooklm-py[headless,browser]>=0.8.0a3" notebooklm login --master-token --account อีเมลของคุณ
+```
+- **วิธีแก้ชั่วคราวที่ 2 (ทางเลือก):** เลี่ยงไปใช้ระบบดึง Cookie จากเบราว์เซอร์ Chrome ในเครื่องแทน (วิธีนี้ไม่ต้องเปิดหน้าต่าง Playwright ใหม่ จึงไม่รันไปชนกับบั๊กนี้):
+```bash
+uvx --from "notebooklm-py[cookies]" notebooklm login --browser-cookies chrome
+```
 
 ---
 
